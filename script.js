@@ -24,7 +24,7 @@ function changeTheMessage() {
   messageText.textContent = newMessage;
 
   // Let's also change the button text to give the user feedback.
-  magicButton.textContent = "You did it! ✨";
+  magicButton.textContent = "Hurrah! You have made magic happen! ✨";
 }
 
 // CONCEPT 5: EVENT LISTENERS
