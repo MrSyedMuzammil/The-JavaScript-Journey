@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Using a mesmerizing animated gradient as the background. */
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  overflow: hidden;
+}
+/* Steps of Background Animation  */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  text-align: center;
+  color: white;
+}
+
+/* Styling for the main heading */
+.title-heading h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.the-count {
+  background: rgba(0, 0, 0, 0.2);
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.the-count p {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #fdbb2d;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.buttons button {
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.increment {
+  background: linear-gradient(45deg, #fdbb2d, #b21f1f);
+}
+
+.reset {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.increment:hover {
+  filter: brightness(1.1);
+}
+
+.reset:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
