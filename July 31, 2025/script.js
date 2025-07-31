@@ -33,3 +33,13 @@ n = n - 1;
 console.log(n);
 
 // In first step n becomes 11, then 11 -1 = 10
+
+// The Ternary Operator instead of if else block
+
+// const age = 18;
+age >= 18
+  ? console.log("You can have Driver's license")
+  : console.log("You can not have driver's license yet");
+
+const car = age >= 18 ? "Real Car" : "Toy Car";
+console.log(car);
