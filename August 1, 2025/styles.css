@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(68, 68, 246);
+  background: linear-gradient(
+    135deg,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    #c33764,
+    #fd6585
+  );
+  background-size: 400% 400%;
+  animation: gradientPan 15s ease infinite;
+}
+@keyframes gradientPan {
+  0% {
+    /* Start position: Top-left */
+    background-position: 0% 50%;
+  }
+  50% {
+    /* Middle of animation: Move to the top-right */
+    background-position: 100% 50%;
+  }
+  100% {
+    /* End of animation: Return to the start position for a seamless loop */
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 40vh;
+  background-color: aqua;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgb(0, 255, 238);
+  transition: all 1s ease-in;
+  background-image: url(images/Syed\ Muzammil\ Black\ Pic.png);
+  background-size: contain;
+}
+
+.container:hover,
+.container:focus {
+  transform: scale(1.2);
+  width: 60vw;
+  height: 60vh;
+  border-radius: 100%;
+}
+
+.container h1 {
+  color: rgb(191, 11, 11);
+  font-size: 5rem;
+  text-shadow: 0 0 10px rgb(162, 41, 33);
+  transition: all 0.5s ease-in;
+}
+
+.container h1:hover,
+.container h1:focus {
+  color: yellow;
+}
