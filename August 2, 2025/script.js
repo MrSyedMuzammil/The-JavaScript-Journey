@@ -51,3 +51,17 @@ const retirementCalculator = (birthYear, firstName) => {
 
 console.log(retirementCalculator(2005, "Syed"));
 console.log(retirementCalculator(2003, "Naveed Saib"));
+
+// Calling a function inside another
+
+const fruitSlices = (fruit) => fruit * 4;
+
+const finalJuice = (mangoCount, strawberryCount) => {
+  const mangoPieces = fruitSlices(mangoCount);
+  const strawberryPieces = fruitSlices(strawberryCount);
+
+  const juice = `This juice is made up of ${mangoPieces} pieces of mangoes and ${strawberryPieces} pieces of strawberries`;
+  return juice;
+};
+
+console.log(finalJuice(2, 3));
