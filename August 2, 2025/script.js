@@ -31,3 +31,13 @@ function createJuiceMessage(mangoCount, strawberryCount) {
 
 const juiceMessage = createJuiceMessage(2, 5); // Here we stored the returned value from the function inside a variable
 console.log(juiceMessage); // The stored value is logged into the console.
+
+// Function Expression
+const calculateAge = function (birthYear) {
+  return 2025 - birthYear;
+};
+
+// Arrow Function
+const ageCalculator = (birthYear) => 2025 - birthYear;
+const age = ageCalculator(2005);
+console.log(`Your are ${age} years old. Thanks!`);
