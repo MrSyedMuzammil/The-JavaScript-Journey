@@ -41,3 +41,13 @@ const calculateAge = function (birthYear) {
 const ageCalculator = (birthYear) => 2025 - birthYear;
 const age = ageCalculator(2005);
 console.log(`Your are ${age} years old. Thanks!`);
+
+const retirementCalculator = (birthYear, firstName) => {
+  const age = 2025 - birthYear;
+  const retirement = 60 - age;
+
+  return `${firstName} retires in ${retirement} years `;
+};
+
+console.log(retirementCalculator(2005, "Syed"));
+console.log(retirementCalculator(2003, "Naveed Saib"));
