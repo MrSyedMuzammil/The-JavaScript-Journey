@@ -65,3 +65,12 @@ const finalJuice = (mangoCount, strawberryCount) => {
 };
 
 console.log(finalJuice(2, 3));
+
+const calcAge = (birthYear) => 2025 - birthYear;
+
+const calculatedRetirement = (birthYear, firstName) => {
+
+    const calculatedAge = calcAge(birthYear);
+    
+    const detailedRetirement
+}
