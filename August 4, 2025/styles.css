@@ -22,9 +22,9 @@ body {
 }
 
 .shape-1 {
-  height: 35vw;
-  max-width: 35rem; 
-  max-height: 35rem;
+  height: 35rem;
+  width: 35rem; 
+  height: 35rem;
   background: linear-gradient(135deg, #f0c 0%, #a0f 100%);
   top: -10%;
   left: -10%;
