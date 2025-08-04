@@ -29,6 +29,13 @@ if (syed[interestedIn]) {
   console.log(syed[interestedIn]);
 } else {
   console.log(
-    `Wrong Request! Please choose Choose between firstName, lastName, age, job and friends `
+    `Wrong Request! Please choose  between firstName, lastName, age, job and friends `
   );
 }
+
+// Challenge
+// Syed has 4 friends, and his best friend is called Farman Bacha
+
+console.log(
+  `${syed.firstName} has ${syed.friends.length} friends, and his best friend is called ${syed.friends[0]}`
+);
