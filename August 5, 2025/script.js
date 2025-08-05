@@ -37,3 +37,22 @@ for (let i = 0; i < developerProfile.length; i++) {
 console.log(profileDataTypes);
 console.log(repeatDataSyedArray);
 console.log(formattedProfileData);
+
+// Challenge : Find the ages from birth Year Array and put into a new array using loop
+
+const birthYears = [1994, 2001, 2003, 2031];
+const ages = [];
+const formattedAges = [];
+
+for (let i = 0; i <= birthYears.length; i++) {
+  console.log(birthYears[i]);
+
+  ages.push(2025 - birthYears[i]);
+
+  formattedAges.push(
+    `BirthYear ${birthYears[i]} : Age ${2025 - birthYears[i]}`
+  );
+}
+
+// console.log(birthYears, ages);
+console.log(formattedAges);
