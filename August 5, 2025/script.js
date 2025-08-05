@@ -73,3 +73,17 @@ for (let i = 0; i <= developerProfile.length; i++) {
   if (typeof developerProfile[i] !== "string") break;
   console.log(developerProfile[i]);
 }
+
+const backwardsData = [];
+
+//Looping Arrays Backwards
+
+for (let i = developerProfile.length - 1; i >= 0; i--) {
+  backwardsData.push(`${i} developerProfile[i]`);
+  console.log(backwardsData);
+}
+
+// The VS Code AutoCompletion
+// for (let i = 0; i < developerProfile.length; i++) {
+//   backwardsData.push(developerProfile[developerProfile.length - 1 - i]);
+// }
