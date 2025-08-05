@@ -87,3 +87,12 @@ for (let i = developerProfile.length - 1; i >= 0; i--) {
 // for (let i = 0; i < developerProfile.length; i++) {
 //   backwardsData.push(developerProfile[developerProfile.length - 1 - i]);
 // }
+
+// The nested loop
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`------Exercise : ${exercise}-----`);
+
+  for (let rep = 1; rep <= 5; rep++) {
+    console.log(`Repitition : ${rep}`);
+  }
+}
