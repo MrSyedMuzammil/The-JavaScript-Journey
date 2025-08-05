@@ -56,3 +56,20 @@ for (let i = 0; i <= birthYears.length; i++) {
 
 // console.log(birthYears, ages);
 console.log(formattedAges);
+
+// Break and Continue Statements
+
+console.log("---- Only Odd Numbers ----");
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0) continue;
+  console.log(i);
+}
+//This will print only the odd numbers i.e when the reminder is zero it will continue and vice versa
+
+console.log(
+  `---- Break Statement ---- if the element in array is not string it will break the loop`
+);
+for (let i = 0; i <= developerProfile.length; i++) {
+  if (typeof developerProfile[i] !== "string") break;
+  console.log(developerProfile[i]);
+}
