@@ -1,12 +1,12 @@
-// console.log("Repitition 1");
-// console.log("Repitition 2");
-// console.log("Repitition 3");
-// console.log("Repitition 4");
-// console.log("Repitition 5");
+// console.log("Repetition 1");
+// console.log("Repetition 2");
+// console.log("Repetition 3");
+// console.log("Repetition 4");
+// console.log("Repetition 5");
 
 // For loop will work unless the condition is not true
 // for (let rep = 0; rep <= 10; rep++) {
-//   console.log(`Repitition ${rep}`);
+//   console.log(`Repetition ${rep}`);
 // }
 
 // Looping the elements of an array
@@ -96,3 +96,5 @@ for (let exercise = 1; exercise <= 3; exercise++) {
     console.log(`Repitition : ${rep}`);
   }
 }
+
+console.log("Hello WOrld");
