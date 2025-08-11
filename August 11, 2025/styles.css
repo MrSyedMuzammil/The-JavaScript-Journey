@@ -1,0 +1,184 @@
+:root {
+  --background-color: #0c0c1e;
+  --card-background-color: rgba(10, 10, 30, 0.2);
+  --card-border-color: rgba(255, 255, 255, 0.1);
+  --card-hover-border-color: rgba(255, 255, 255, 0.3);
+  --text-color: white;
+
+  /* Aurora Gradient Colors */
+  --aurora-color-1: #ff6b6b; /* Reddish-pink */
+  --aurora-color-2: #4d96ff; /* Blue */
+  --aurora-color-3: #70e0d1; /* Teal */
+  --aurora-color-4: #feca57; /* Yellow */
+
+  --card-border-radius: 25px;
+  --card-blur-amount: 20px;
+  --background-blur-amount: 120px;
+  --card-padding: 50px;
+  --title-font-size: 4rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background-color);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.aurora-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(var(--background-blur-amount));
+}
+
+.aurora-shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.aurora-shape1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--aurora-color-1), transparent 60%);
+  top: 10%;
+  left: 15%;
+  animation: drift 25s infinite alternate linear;
+}
+
+.aurora-shape2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--aurora-color-2), transparent 60%);
+  top: 20%;
+  right: 10%;
+  animation: drift 30s infinite alternate-reverse linear;
+}
+
+.aurora-shape3 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, var(--aurora-color-3), transparent 60%);
+  bottom: 5%;
+  left: 30%;
+  animation: drift 28s infinite alternate linear;
+}
+
+.aurora-shape4 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--aurora-color-4), transparent 60%);
+  bottom: 15%;
+  right: 25%;
+  animation: drift 22s infinite alternate-reverse linear;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(50px, -50px) rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: translate(100px, 100px) rotate(180deg) scale(1);
+  }
+  75% {
+    transform: translate(-50px, 50px) rotate(270deg) scale(0.9);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg) scale(1);
+  }
+}
+
+.dark-glass-card {
+  width: 90%;
+  max-width: 600px;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  color: var(--text-color);
+  position: relative;
+  z-index: 10;
+  text-align: center;
+
+  background: var(--card-background-color);
+  backdrop-filter: blur(var(--card-blur-amount));
+  -webkit-backdrop-filter: blur(var(--card-blur-amount));
+  border: 1px solid var(--card-border-color);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark-glass-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.4);
+  border-color: var(--card-hover-border-color);
+}
+
+/* 5. Content Styling */
+.card-title {
+  font-size: var(--title-font-size);
+  font-weight: 600;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* For Tablets */
+@media (max-width: 1024px) {
+  :root {
+    --card-padding: 40px;
+    --title-font-size: 3.5rem;
+    --background-blur-amount: 100px;
+  }
+  .aurora-shape1,
+  .aurora-shape2,
+  .aurora-shape3,
+  .aurora-shape4 {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+  :root {
+    --card-padding: 30px;
+    --title-font-size: 2.5rem;
+    --card-blur-amount: 15px;
+    --background-blur-amount: 80px;
+  }
+
+  .aurora-shape1,
+  .aurora-shape2,
+  .aurora-shape3,
+  .aurora-shape4 {
+    width: 300px;
+    height: 300px;
+  }
+
+  @keyframes drift {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    50% {
+      transform: translate(50px, 50px) rotate(180deg) scale(1.1);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+  }
+}
