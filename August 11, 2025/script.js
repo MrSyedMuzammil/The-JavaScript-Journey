@@ -116,3 +116,22 @@ for (let propertieskeys in person) {
 // for (variable in Array) {
 //   code;
 // }
+
+// The For...of Loop
+
+// Looping over an array
+const friends = ["Farman Bacha", "Naveed Rehman", "Kashif Afridi"];
+
+let text = "";
+for (let x of friends) {
+  console.log((text += x));
+}
+
+// Looping over a string
+let word = "Anything";
+
+let chars = "";
+for (let char of word) {
+  chars = char;
+  console.log(chars);
+}
