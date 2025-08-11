@@ -98,3 +98,21 @@ for (let exercise = 1; exercise <= 3; exercise++) {
 }
 
 console.log("Hello WOrld");
+
+const person = {
+  firstName: "Syed",
+  lastName: "Muzammil",
+  age: 2025 - 2003,
+  job: "Developer",
+  friends: ["Farman Bacha", "Naveed Rehman", "Kashif Afridi"],
+};
+
+for (let propertieskeys in person) {
+  console.log(person[propertieskeys]);
+}
+
+// the for in loop can also be used on arrays
+//
+// for (variable in Array) {
+//   code;
+// }
