@@ -158,3 +158,10 @@ console.log(myTrusty);
 // slicing the myTrusty array and removing all the friends except the first two and others too
 const outsidersTrusty = myTrusty.slice(7); // This will slice out at index i.e 7 brothers at beginning
 console.log(outsidersTrusty);
+
+// JAVASCRIPT ARRAY SEARCH METHODS
+
+//  1. indexOf() i have used it in the above code
+
+//  2. include()
+console.log(outsidersTrusty.includes("Farman Bacha")); // true if it has
