@@ -165,3 +165,29 @@ console.log(outsidersTrusty);
 
 //  2. include()
 console.log(outsidersTrusty.includes("Farman Bacha")); // true if it has
+
+// SORTING ARRAY
+
+myTrusty.sort();
+console.log(myTrusty);
+
+// REVERSE ARRAY
+myTrusty.reverse();
+console.log(myTrusty);
+
+// toSorted ( The same concept as in above, this creates new array and keeps safe the old one)
+
+const sortedArray = friends.toSorted();
+console.log(sortedArray); // sorted friends array
+console.log(myTrusty); // the old reversed array
+
+// toReversed() ... as above
+const reversedArray = friends.toReversed();
+console.log(reversedArray);
+
+const numbers = [1, 2, 13, 31, 22, 43, 654, 32];
+console.log(numbers);
+numbers.sort(function (a, b) {
+  return a - b;
+});
+console.log(numbers);
